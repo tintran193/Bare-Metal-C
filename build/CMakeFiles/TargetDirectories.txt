@@ -1,0 +1,3 @@
+/home/tintran/Bare-metal-C/build/CMakeFiles/BareMetalC.elf.dir
+/home/tintran/Bare-metal-C/build/CMakeFiles/edit_cache.dir
+/home/tintran/Bare-metal-C/build/CMakeFiles/rebuild_cache.dir
