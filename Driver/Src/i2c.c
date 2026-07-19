@@ -26,7 +26,7 @@ void I2C_Init (I2C_TypeDef *I2Cx, const I2C_Config_t *I2C_Conf) {
     uint32_t freq;
     freq = pclk/1000000U;
     I2Cx->CR2 &= ~I2C_CR2_FREQ_MASK;
-    I2Cx->CR2 != (uint16_t)freq;
+    I2Cx->CR2 |= (uint16_t)freq;
     /* CCR */
     /*
     Sm mode: T_high = CCR * T_pclk1
@@ -37,20 +37,19 @@ void I2C_Init (I2C_TypeDef *I2Cx, const I2C_Config_t *I2C_Conf) {
     */
     uint16_t ccr;
     if (I2C_Conf->ClockSpeed == i2c_speed_std) {
-        ccr = freq/(I2C_Conf->ClockSpeed*2U);
-        I2Cx->CCR = ccr;
+        ccr = pclk/(I2C_Conf->ClockSpeed*2U);
     } else {
         // Fm mode I2C selection
-        I2Cx->CCR |= I2C_CCR_FS;
         if (I2C_Conf->DutyCycle == i2c_duty_2) {
-            ccr = freq/(I2C_Conf->DutyCycle*3U);
-            I2Cx->CCR &= ~I2C_CCR_DUTY; 
+            ccr = pclk/(I2C_Conf->ClockSpeed*3U);
+            ccr &= ~I2C_CCR_DUTY; 
         } else {
-            ccr = freq/(I2C_Conf->DutyCycle*25U);
-            I2Cx->CCR |= I2C_CCR_DUTY;
+            ccr = pclk/(I2C_Conf->ClockSpeed*25U);
+            ccr |= I2C_CCR_DUTY;
         }
-        I2Cx->CCR = ccr;
+        ccr |= I2C_CCR_FS;
     }
+    I2Cx->CCR = ccr;
     /* TRISE */
     if (I2C_Conf->ClockSpeed == i2c_speed_std) {
         I2Cx->TRISE = freq + 1U;
@@ -58,8 +57,8 @@ void I2C_Init (I2C_TypeDef *I2Cx, const I2C_Config_t *I2C_Conf) {
         I2Cx->TRISE = ((freq*300U)/1000U)+1U;
     }
     /* Configure ACK */
-    if (Config->ACK == i2c_ack_enable) {
-        I2Cx->CR1 != I2C_CR1_ACK;
+    if (I2C_Conf->ACK == i2c_ack_enable) {
+        I2Cx->CR1 |= I2C_CR1_ACK;
     } else {
         I2Cx->CR1 &= ~I2C_CR1_ACK;
     }
