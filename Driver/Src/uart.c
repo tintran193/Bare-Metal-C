@@ -11,7 +11,7 @@ void USART_Enable(USART_TypeDef *USARTx)
     USARTx->CR1 |= USART_CR1_UE;
 }
 
-void USART_DIsable(USART_TypeDef *USARTx)
+void USART_Disable(USART_TypeDef *USARTx)
 {
     if (USARTx == 0) return;
     USARTx->CR1 &= ~(USART_CR1_UE);
