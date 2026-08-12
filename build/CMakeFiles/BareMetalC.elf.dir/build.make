@@ -97,10 +97,24 @@ CMakeFiles/BareMetalC.elf.dir/Driver/Src/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BareMetalC.elf.dir/Driver/Src/gpio.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tintran/Bare-metal-C/Driver/Src/gpio.c -o CMakeFiles/BareMetalC.elf.dir/Driver/Src/gpio.c.s
 
+CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.obj: CMakeFiles/BareMetalC.elf.dir/flags.make
+CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.obj: /home/tintran/Bare-metal-C/Driver/Src/i2c.c
+CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.obj: CMakeFiles/BareMetalC.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tintran/Bare-metal-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.obj -MF CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.obj.d -o CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.obj -c /home/tintran/Bare-metal-C/Driver/Src/i2c.c
+
+CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tintran/Bare-metal-C/Driver/Src/i2c.c > CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.i
+
+CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tintran/Bare-metal-C/Driver/Src/i2c.c -o CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.s
+
 CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.obj: CMakeFiles/BareMetalC.elf.dir/flags.make
 CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.obj: /home/tintran/Bare-metal-C/Driver/Src/rcc.c
 CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.obj: CMakeFiles/BareMetalC.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tintran/Bare-metal-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tintran/Bare-metal-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.obj -MF CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.obj.d -o CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.obj -c /home/tintran/Bare-metal-C/Driver/Src/rcc.c
 
 CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.i: cmake_force
@@ -111,10 +125,24 @@ CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tintran/Bare-metal-C/Driver/Src/rcc.c -o CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.s
 
+CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.obj: CMakeFiles/BareMetalC.elf.dir/flags.make
+CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.obj: /home/tintran/Bare-metal-C/Driver/Src/systick.c
+CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.obj: CMakeFiles/BareMetalC.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tintran/Bare-metal-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.obj -MF CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.obj.d -o CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.obj -c /home/tintran/Bare-metal-C/Driver/Src/systick.c
+
+CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tintran/Bare-metal-C/Driver/Src/systick.c > CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.i
+
+CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tintran/Bare-metal-C/Driver/Src/systick.c -o CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.s
+
 CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.obj: CMakeFiles/BareMetalC.elf.dir/flags.make
 CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.obj: /home/tintran/Bare-metal-C/Driver/Src/uart.c
 CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.obj: CMakeFiles/BareMetalC.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tintran/Bare-metal-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tintran/Bare-metal-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.obj -MF CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.obj.d -o CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.obj -c /home/tintran/Bare-metal-C/Driver/Src/uart.c
 
 CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.i: cmake_force
@@ -127,7 +155,7 @@ CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.s: cmake_force
 
 CMakeFiles/BareMetalC.elf.dir/Startup/startup_stm32f401retx.s.obj: CMakeFiles/BareMetalC.elf.dir/flags.make
 CMakeFiles/BareMetalC.elf.dir/Startup/startup_stm32f401retx.s.obj: /home/tintran/Bare-metal-C/Startup/startup_stm32f401retx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tintran/Bare-metal-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building ASM object CMakeFiles/BareMetalC.elf.dir/Startup/startup_stm32f401retx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tintran/Bare-metal-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building ASM object CMakeFiles/BareMetalC.elf.dir/Startup/startup_stm32f401retx.s.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BareMetalC.elf.dir/Startup/startup_stm32f401retx.s.obj -c /home/tintran/Bare-metal-C/Startup/startup_stm32f401retx.s
 
 CMakeFiles/BareMetalC.elf.dir/Startup/startup_stm32f401retx.s.i: cmake_force
@@ -142,7 +170,9 @@ CMakeFiles/BareMetalC.elf.dir/Startup/startup_stm32f401retx.s.s: cmake_force
 BareMetalC_elf_OBJECTS = \
 "CMakeFiles/BareMetalC.elf.dir/App/main.c.obj" \
 "CMakeFiles/BareMetalC.elf.dir/Driver/Src/gpio.c.obj" \
+"CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.obj" \
 "CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.obj" \
+"CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.obj" \
 "CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.obj" \
 "CMakeFiles/BareMetalC.elf.dir/Startup/startup_stm32f401retx.s.obj"
 
@@ -151,12 +181,14 @@ BareMetalC_elf_EXTERNAL_OBJECTS =
 
 BareMetalC.elf: CMakeFiles/BareMetalC.elf.dir/App/main.c.obj
 BareMetalC.elf: CMakeFiles/BareMetalC.elf.dir/Driver/Src/gpio.c.obj
+BareMetalC.elf: CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.obj
 BareMetalC.elf: CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.obj
+BareMetalC.elf: CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.obj
 BareMetalC.elf: CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.obj
 BareMetalC.elf: CMakeFiles/BareMetalC.elf.dir/Startup/startup_stm32f401retx.s.obj
 BareMetalC.elf: CMakeFiles/BareMetalC.elf.dir/build.make
 BareMetalC.elf: CMakeFiles/BareMetalC.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/tintran/Bare-metal-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable BareMetalC.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/tintran/Bare-metal-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable BareMetalC.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BareMetalC.elf.dir/link.txt --verbose=$(VERBOSE)
 	arm-none-eabi-objcopy -O binary BareMetalC.elf BareMetalC.bin
 	arm-none-eabi-objcopy -O ihex BareMetalC.elf BareMetalC.hex

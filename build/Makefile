@@ -177,6 +177,30 @@ Driver/Src/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BareMetalC.elf.dir/build.make CMakeFiles/BareMetalC.elf.dir/Driver/Src/gpio.c.s
 .PHONY : Driver/Src/gpio.c.s
 
+Driver/Src/i2c.obj: Driver/Src/i2c.c.obj
+.PHONY : Driver/Src/i2c.obj
+
+# target to build an object file
+Driver/Src/i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BareMetalC.elf.dir/build.make CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.obj
+.PHONY : Driver/Src/i2c.c.obj
+
+Driver/Src/i2c.i: Driver/Src/i2c.c.i
+.PHONY : Driver/Src/i2c.i
+
+# target to preprocess a source file
+Driver/Src/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BareMetalC.elf.dir/build.make CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.i
+.PHONY : Driver/Src/i2c.c.i
+
+Driver/Src/i2c.s: Driver/Src/i2c.c.s
+.PHONY : Driver/Src/i2c.s
+
+# target to generate assembly for a file
+Driver/Src/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BareMetalC.elf.dir/build.make CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.s
+.PHONY : Driver/Src/i2c.c.s
+
 Driver/Src/rcc.obj: Driver/Src/rcc.c.obj
 .PHONY : Driver/Src/rcc.obj
 
@@ -200,6 +224,30 @@ Driver/Src/rcc.s: Driver/Src/rcc.c.s
 Driver/Src/rcc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BareMetalC.elf.dir/build.make CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.s
 .PHONY : Driver/Src/rcc.c.s
+
+Driver/Src/systick.obj: Driver/Src/systick.c.obj
+.PHONY : Driver/Src/systick.obj
+
+# target to build an object file
+Driver/Src/systick.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BareMetalC.elf.dir/build.make CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.obj
+.PHONY : Driver/Src/systick.c.obj
+
+Driver/Src/systick.i: Driver/Src/systick.c.i
+.PHONY : Driver/Src/systick.i
+
+# target to preprocess a source file
+Driver/Src/systick.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BareMetalC.elf.dir/build.make CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.i
+.PHONY : Driver/Src/systick.c.i
+
+Driver/Src/systick.s: Driver/Src/systick.c.s
+.PHONY : Driver/Src/systick.s
+
+# target to generate assembly for a file
+Driver/Src/systick.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BareMetalC.elf.dir/build.make CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.s
+.PHONY : Driver/Src/systick.c.s
 
 Driver/Src/uart.obj: Driver/Src/uart.c.obj
 .PHONY : Driver/Src/uart.obj
@@ -248,9 +296,15 @@ help:
 	@echo "... Driver/Src/gpio.obj"
 	@echo "... Driver/Src/gpio.i"
 	@echo "... Driver/Src/gpio.s"
+	@echo "... Driver/Src/i2c.obj"
+	@echo "... Driver/Src/i2c.i"
+	@echo "... Driver/Src/i2c.s"
 	@echo "... Driver/Src/rcc.obj"
 	@echo "... Driver/Src/rcc.i"
 	@echo "... Driver/Src/rcc.s"
+	@echo "... Driver/Src/systick.obj"
+	@echo "... Driver/Src/systick.i"
+	@echo "... Driver/Src/systick.s"
 	@echo "... Driver/Src/uart.obj"
 	@echo "... Driver/Src/uart.i"
 	@echo "... Driver/Src/uart.s"

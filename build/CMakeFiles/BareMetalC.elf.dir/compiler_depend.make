@@ -4,6 +4,7 @@
 CMakeFiles/BareMetalC.elf.dir/App/main.c.obj: /home/tintran/Bare-metal-C/App/main.c \
   /home/tintran/Bare-metal-C/Driver/Inc/gpio.h \
   /home/tintran/Bare-metal-C/Driver/Inc/rcc.h \
+  /home/tintran/Bare-metal-C/Driver/Inc/systick.h \
   /home/tintran/Bare-metal-C/Driver/Inc/uart.h \
   /usr/include/newlib/_ansi.h \
   /usr/include/newlib/_newlib_version.h \
@@ -27,17 +28,30 @@ CMakeFiles/BareMetalC.elf.dir/Driver/Src/gpio.c.obj: /home/tintran/Bare-metal-C/
   /home/tintran/Bare-metal-C/Driver/Inc/gpio.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
 
+CMakeFiles/BareMetalC.elf.dir/Driver/Src/i2c.c.obj: /home/tintran/Bare-metal-C/Driver/Src/i2c.c \
+  /home/tintran/Bare-metal-C/Driver/Inc/i2c.h \
+  /home/tintran/Bare-metal-C/Driver/Inc/rcc.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
+
 CMakeFiles/BareMetalC.elf.dir/Driver/Src/rcc.c.obj: /home/tintran/Bare-metal-C/Driver/Src/rcc.c \
-  /home/tintran/Bare-metal-C/Driver/Inc/gpio.h \
   /home/tintran/Bare-metal-C/Driver/Inc/rcc.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
 
+CMakeFiles/BareMetalC.elf.dir/Driver/Src/systick.c.obj: /home/tintran/Bare-metal-C/Driver/Src/systick.c \
+  /home/tintran/Bare-metal-C/Driver/Inc/rcc.h \
+  /home/tintran/Bare-metal-C/Driver/Inc/systick.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
+
 CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.obj: /home/tintran/Bare-metal-C/Driver/Src/uart.c \
-  /home/tintran/Bare-metal-C/Driver/Inc/gpio.h \
   /home/tintran/Bare-metal-C/Driver/Inc/rcc.h \
   /home/tintran/Bare-metal-C/Driver/Inc/uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
 
+
+/home/tintran/Bare-metal-C/Driver/Inc/i2c.h:
+
+/home/tintran/Bare-metal-C/Driver/Src/i2c.c:
 
 /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h:
 
@@ -55,6 +69,10 @@ CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.obj: /home/tintran/Bare-metal-C/
 
 /home/tintran/Bare-metal-C/Driver/Inc/rcc.h:
 
+/usr/include/newlib/sys/cdefs.h:
+
+/home/tintran/Bare-metal-C/Driver/Inc/systick.h:
+
 /home/tintran/Bare-metal-C/Driver/Src/rcc.c:
 
 /home/tintran/Bare-metal-C/Driver/Inc/uart.h:
@@ -68,6 +86,8 @@ CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.obj: /home/tintran/Bare-metal-C/
 /usr/include/newlib/_ansi.h:
 
 /usr/include/newlib/_newlib_version.h:
+
+/home/tintran/Bare-metal-C/Driver/Src/systick.c:
 
 /usr/include/newlib/newlib.h:
 
@@ -84,5 +104,3 @@ CMakeFiles/BareMetalC.elf.dir/Driver/Src/uart.c.obj: /home/tintran/Bare-metal-C/
 /usr/include/newlib/stdio.h:
 
 /usr/include/newlib/sys/_types.h:
-
-/usr/include/newlib/sys/cdefs.h:

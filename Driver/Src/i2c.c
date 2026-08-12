@@ -1,5 +1,6 @@
 #include "i2c.h"
 #include "rcc.h"
+#include <stddef.h>
 
 
 void I2C_Reset (I2C_TypeDef *I2Cx) {
@@ -15,7 +16,7 @@ void I2C_Enable (I2C_TypeDef *I2Cx) {
 }
 
 void I2C_Init (I2C_TypeDef *I2Cx, const I2C_Config_t *I2C_Conf) {
-    if (I2Cx == 0 || I2C_Conf == 0) {
+    if (I2Cx == NULL || I2C_Conf == NULL) {
         return;
     }
     /* Disable peripheral */
