@@ -27,11 +27,15 @@ typedef struct
 /* CR1 bits */
 #define SPI_CR1_CPHA (1U << 0)
 #define SPI_CR1_CPOL (1U << 1)
+#define SPI_CR1_MSTR (1U << 2)
 #define SPI_CR1_BR (7U << 3)
 #define SPI_CR1_BR_0 (1U << 3)
 #define SPI_CR1_BR_1 (2U << 3)
 #define SPI_CR1_BR_2 (4U << 3)
 #define SPI_CR1_SPE (1U << 6)
+#define SPI_CR1_LSBFIRST (1U << 7)
+#define SPI_CR1_SSI (1U << 8)
+#define SPI_CR1_SSM (1U << 9)
 #define SPI_CR1_DFF (1U << 11)
 
 /* SR bits */
@@ -66,6 +70,12 @@ typedef enum
 
 typedef enum
 {
+    spi_nss_soft = 0,
+    spi_nss_hard = 1
+} SPI_NSS;
+
+typedef enum
+{
     spi_baud_rate_div_2 = 0,
     spi_baud_rate_div_4 = 1,
     spi_baud_rate_div_8 = 2,
@@ -76,19 +86,27 @@ typedef enum
     spi_baud_rate_div_256 = 7
 } SPI_BaudRate;
 
+typedef enum
+{
+    spi_lsb_first = 0,
+    spi_msb_first = 1
+} SPI_FirstBit;
+
 typedef struct
 {
     SPI_Mode Mode;
     SPI_DataWidth DataWidth;
     SPI_ClockPolarity ClockPolarity;
     SPI_ClockPhase ClockPhase;
+    SPI_NSS NSS;
     SPI_BaudRate BaudRate;
+    SPI_FirstBit BitOrder;
 } SPI_Config_t;
 
 void SPI_Enable(SPI_TypeDef *SPIx);
 void SPI_Disable(SPI_TypeDef *SPIx);
 void SPI_Init(SPI_TypeDef *SPIx, SPI_Config_t *config);
-void SPI_ReceiveData8(SPI_TypeDef *SPIx);
+uint8_t SPI_ReceiveData8(SPI_TypeDef *SPIx);
 void SPI_TransmitData8(SPI_TypeDef *SPIx, uint8_t data);
 
 
