@@ -5,6 +5,7 @@
 |Git|git version 2.43.0|
 |Make|GNU Make 4.3 Built for x86_64-pc-linux-gnu License GPLv3+|
 |Cmake|cmake version 3.28.3|
+|Ninja|version 1.11.1|
 |OpenOCD|Open On-Chip Debugger 0.11.0+dev-00837-gde99836cf-dirty (2022-09-09-03:18) Licensed under GNU GPL v2|
 |ARM GCC|arm-none-eabi-gcc (15:13.2.rel1-2) 13.2.1 20231009|
 
