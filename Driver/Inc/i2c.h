@@ -59,8 +59,8 @@ typedef struct {
 #define I2C_CCR_CCR_MASK 0x3FFU
 
 typedef enum {
-    i2c_diection_read = 0,
-    i2c_direction_write 
+    i2c_direction_write = 0,
+    i2c_direction_read
 } I2C_Direction_t;
 
 typedef enum {
@@ -104,6 +104,12 @@ typedef struct
 } I2C_Config_t;
 
 void I2C_Reset (I2C_TypeDef *I2Cx);
+void I2C_Enable(I2C_TypeDef *I2Cx);
+void I2C_Init(I2C_TypeDef *I2Cx, const I2C_Config_t *I2C_Conf);
+void I2C_Start (I2C_TypeDef *I2Cx);
+void I2C_SendAddress (I2C_TypeDef *I2Cx, uint8_t address, I2C_Direction_t direction);
+void I2C_SendData (I2C_TypeDef *I2Cx, uint8_t data);
+void I2C_Stop (I2C_TypeDef *I2Cx);
 
 
 #endif 

@@ -25,7 +25,7 @@ void I2C_Init (I2C_TypeDef *I2Cx, const I2C_Config_t *I2C_Conf) {
     uint32_t pclk;
     pclk = RCC_GetPCLK1Freq();
     uint32_t freq;
-    freq = pclk/1000000U;
+    freq = pclk/1000000U; //in MHz
     I2Cx->CR2 &= ~I2C_CR2_FREQ_MASK;
     I2Cx->CR2 |= (uint16_t)freq;
     /* CCR */
